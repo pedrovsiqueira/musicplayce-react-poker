@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Container, Content } from "./styles";
 
 interface ICardsProp {
   code: string;
@@ -23,7 +24,12 @@ const Poker: React.FC = () => {
   }, []);
   console.log("this is playerOne cards", playerOneCards);
   console.log("this is playerTwo cards", playerTwoCards);
-  return <div>This is my poker page</div>;
+
+  return (
+    <Container>
+      <Content></Content>
+    </Container>
+  );
 };
 
 export default Poker;
