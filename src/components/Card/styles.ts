@@ -8,15 +8,23 @@ interface ICardProps {
 export const Container = styled.div`
   min-width: 120px;
   height: 100vh;
+
+  @media (max-width: 500px) {
+    height: auto;
+    min-height: 100px;
+  }
 `;
 
 export const Content = styled.div`
   height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 500px) {
+    flex-direction: row;
+  }
 
   img {
     width: 100%;
@@ -27,6 +35,12 @@ export const Content = styled.div`
 export const StyledCardContainer = styled.div`
   width: 120px;
   height: 168px;
+
+  @media (max-width: 500px) {
+    width: 80px;
+    height: 100px;
+    margin: 0 10px;
+  }
 `;
 
 export const StyledCard = styled.div<ICardProps>`

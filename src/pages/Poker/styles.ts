@@ -5,11 +5,15 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 100%;
   max-width: 1248px;
   margin: 0 auto;
   display: flex;
   height: 100vh;
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   & > section {
     height: 100%;
@@ -23,10 +27,19 @@ export const Content = styled.div`
     width: 160px;
     font-size: 3rem;
     font-weight: 600;
+
+    @media (max-width: 500px) {
+      transform: rotate(0);
+      width: 100%;
+      text-align: center;
+    }
   }
 
   #second-player {
     transform: rotate(-270deg);
+    @media (max-width: 500px) {
+      transform: rotate(0);
+    }
   }
 `;
 
@@ -51,6 +64,10 @@ export const StyledWinnerBox = styled.div`
     text-align: center;
     padding: 10px;
     font-weight: 500;
+
+    @media (max-width: 500px) {
+      font-size: 3rem;
+    }
   }
 `;
 
@@ -58,4 +75,8 @@ export const ControlButtons = styled.div`
   display: flex;
   justify-content: space-between;
   width: 350px;
+
+  @media (max-width: 500px) {
+    margin-bottom: 20px;
+  }
 `;
