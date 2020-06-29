@@ -28,6 +28,7 @@ const Poker: React.FC = () => {
   const [results, setResults] = useState("");
   const [winner, setWinner] = useState("");
   const [isRevealed, setIsRevelead] = useState(false);
+
   const getCards = () => {
     axios
       .get("https://deckofcardsapi.com/api/deck/new/draw/?count=10")
@@ -43,6 +44,8 @@ const Poker: React.FC = () => {
   }, []);
 
   const handleCheck = () => {
+    if (winner !== "" || results !== "") return;
+
     const playerOneCodes = playerOneCards.map((item) => item.code).join(" ");
     const playerTwoCodes = playerTwoCards.map((item) => item.code).join(" ");
 
@@ -52,7 +55,7 @@ const Poker: React.FC = () => {
       setWinner("player one");
       setResults(checkResults(playerOneCodes));
       setIsRevelead(true);
-    } else {
+    } else if (checkWinner === 1) {
       setWinner("player two");
       setResults(checkResults(playerTwoCodes));
       setIsRevelead(true);
@@ -60,10 +63,12 @@ const Poker: React.FC = () => {
   };
 
   const handleRestart = () => {
-    setWinner("");
-    setResults("");
-    getCards();
-    setIsRevelead(false);
+    setTimeout(() => {
+      getCards();
+      setWinner("");
+      setResults("");
+      setIsRevelead(false);
+    }, 800);
   };
 
   return (
