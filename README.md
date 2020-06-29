@@ -43,7 +43,7 @@ git clone https://github.com/pedrovsiqueira/musicplayce-react-poker
 2. Install YARN packages
 
 ```sh
-yarn add
+yarn
 ```
 
 3. Run the app
