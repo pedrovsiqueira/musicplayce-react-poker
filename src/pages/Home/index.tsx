@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import { Container, Content } from "./styles";
 import musicPlayceLogo from "../../assets/musicPlayceLogo.svg";
 import Button from "../../components/Button/";
+import StyledLogo from "../../components/StyledLogo/";
 
 const Home: React.FC = () => {
   return (
     <Container>
       <Content>
-        <figure>
-          <img src={musicPlayceLogo} alt="Music Playce Logo" />
-        </figure>
+        <StyledLogo />
         <h1>MusicPlayce Poker Game</h1>
         <section>
           <Link to="/poker">

@@ -11,8 +11,9 @@ import {
 import Card from "../../components/Card";
 import Button from "../../components/Button";
 import { checkResults } from "../../helpers/checkResults";
+import StyledLogo from "../../components/StyledLogo/";
 
-var poker = require("poker-hands");
+const poker = require("poker-hands");
 
 interface ICardsProp {
   code: string;
@@ -77,6 +78,7 @@ const Poker: React.FC = () => {
         />
 
         <ControlSection>
+          <StyledLogo />
           <StyledWinnerBox>
             {winner ? (
               <h1>
