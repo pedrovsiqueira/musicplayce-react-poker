@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
-import { Container, Content, StyledWinnerBox, ControlSection } from "./styles";
+import {
+  Container,
+  Content,
+  StyledWinnerBox,
+  ControlSection,
+  ControlButtons,
+} from "./styles";
 import Card from "../../components/Card";
 import Button from "../../components/Button";
 import { checkResults } from "../../helpers/checkResults";
@@ -69,14 +76,20 @@ const Poker: React.FC = () => {
                 The winner with the best hand is {winner} with: {results}!
               </h1>
             ) : (
-              <h1>To reveal the winner, click on the button below!</h1>
+              <h1>To reveal the winner, click on the buttons below!</h1>
             )}
           </StyledWinnerBox>
-          {winner ? (
-            <Button onClick={handleRestart}>restart</Button>
-          ) : (
-            <Button onClick={handleCheck}>check</Button>
-          )}
+
+          <ControlButtons>
+            <Link to="/">
+              <Button>go back</Button>
+            </Link>
+            {winner ? (
+              <Button onClick={handleRestart}>restart</Button>
+            ) : (
+              <Button onClick={handleCheck}>play</Button>
+            )}
+          </ControlButtons>
         </ControlSection>
 
         <Card isRevealed={isRevealed} />

@@ -37,3 +37,9 @@ export const StyledWinnerBox = styled.div`
     padding: 10px;
   }
 `;
+
+export const ControlButtons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+`;

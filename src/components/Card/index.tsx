@@ -13,18 +13,6 @@ const Card: React.FC<ICardProps> = ({ isRevealed, ...rest }) => {
         <figure>
           <img src={backCard} alt="back of playing card" />
         </figure>
-        <figure>
-          <img src={backCard} alt="back of playing card" />
-        </figure>
-        <figure>
-          <img src={backCard} alt="back of playing card" />
-        </figure>
-        <figure>
-          <img src={backCard} alt="back of playing card" />
-        </figure>
-        <figure>
-          <img src={backCard} alt="back of playing card" />
-        </figure>
       </Content>
     </Container>
   );
