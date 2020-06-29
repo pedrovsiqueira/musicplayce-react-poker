@@ -6892,6 +6892,11 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
+lodash@^3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
+  integrity sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=
+
 loglevel@^1.6.6:
   version "1.6.8"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.8.tgz#8a25fb75d092230ecd4457270d80b54e28011171"
@@ -8013,6 +8018,18 @@ pnp-webpack-plugin@1.6.4:
   integrity sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
   dependencies:
     ts-pnp "^1.1.6"
+
+poker-hands@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/poker-hands/-/poker-hands-1.0.2.tgz#617841fb40c694f6c88e842aafd6787118bcd3c3"
+  integrity sha1-YXhB+0DGlPbIjoQqr9Z4cRi808M=
+  dependencies:
+    lodash "^3.10.1"
+
+pokersolver@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/pokersolver/-/pokersolver-2.1.3.tgz#c99879efd209adff4d803932e10acf3b0b78e7fa"
+  integrity sha512-9F9ip1X9SjXhoRBnJy356NDyn1tJ9CLSUTl6hur0TNO1vEhN4bggnb84KnnKrSSm4EJz8XCBtVnfNlUKm7NPUg==
 
 portfinder@^1.0.25:
   version "1.0.26"
