@@ -63,12 +63,12 @@ const Poker: React.FC = () => {
   };
 
   const handleRestart = () => {
+    setIsRevelead(false);
     setTimeout(() => {
-      getCards();
       setWinner("");
       setResults("");
-      setIsRevelead(false);
-    }, 800);
+      getCards();
+    }, 700);
   };
 
   return (

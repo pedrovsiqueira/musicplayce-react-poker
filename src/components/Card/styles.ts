@@ -50,7 +50,7 @@ export const StyledCard = styled.div<ICardProps>`
   height: 100%;
   border-radius: 10px;
   transform-style: preserve-3d;
-  transition: all 0.8s ease;
+  transition: all 0.5s ease-in-out;
 
   ${(props) =>
     props.isRevealed
