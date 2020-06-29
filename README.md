@@ -22,7 +22,7 @@ The challenge was to build an application that receives two poker hands and deci
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+### Usage
 
 The project is deployed and can be accessed at https://musicplayce-react-poker.netlify.app/
 
