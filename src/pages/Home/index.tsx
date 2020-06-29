@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Content } from "./styles";
-import musicPlayceLogo from "../../assets/musicPlayceLogo.svg";
 import Button from "../../components/Button/";
 import StyledLogo from "../../components/StyledLogo/";
 
