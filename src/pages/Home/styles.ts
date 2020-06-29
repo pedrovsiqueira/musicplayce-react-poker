@@ -14,12 +14,6 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
 
-  figure {
-    background: rgba(1, 1, 1, 0.3);
-    border-radius: 14px;
-    padding: 21px 58px;
-  }
-
   h1 {
     font-size: 2.8rem;
     margin: 87px 0;
