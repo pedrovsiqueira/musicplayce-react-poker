@@ -11,8 +11,11 @@ The challenge was to build an application that receives two poker hands and deci
 ### Built With:
 
 - [Typescript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-- [ReactJS](https://pt-br.reactjs.org/) - Uma biblioteca JavaScript para criar interfaces de usuário.
+- [ReactJS](https://pt-br.reactjs.org/) - React is a JavaScript library for building user interfaces.
 - [Styled Components](https://styled-components.com/) - Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress.
+- [Poker Hands](https://www.npmjs.com/package/poker-hands) - Quickly evaluate poker hands with this package.
+- [Deck of Cards API](https://deckofcardsapi.com/) - An API to simulate a deck of cards.
+- [Netlify](https://www.netlify.com/) - Netlify builds, deploys and hosts your front-end.
 
 <!-- GETTING STARTED -->
 
