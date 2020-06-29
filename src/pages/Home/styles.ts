@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 `;
 
@@ -21,6 +21,7 @@ export const Content = styled.div`
   }
 
   h1 {
+    font-size: 2.8rem;
     margin: 87px 0;
   }
   section {

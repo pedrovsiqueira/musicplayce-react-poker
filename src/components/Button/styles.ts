@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const StyledButton = styled.button`
   color: #ecf0f3;
-  min-width: 164px;
-  min-height: 64px;
+  width: 164px;
+  height: 64px;
   border-radius: 17px;
   font-size: 2.6rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 110%;
   padding: 15px 6px;
   letter-spacing: 0.02em;

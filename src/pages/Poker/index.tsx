@@ -62,12 +62,19 @@ const Poker: React.FC = () => {
     setWinner("");
     setResults("");
     getCards();
+    setIsRevelead(false);
   };
 
   return (
     <Container>
       <Content>
-        <Card isRevealed={isRevealed} />
+        <section>
+          <p>Player One</p>
+        </section>
+        <Card
+          isRevealed={isRevealed}
+          playerCards={playerOneCards.map((card) => card.image)}
+        />
 
         <ControlSection>
           <StyledWinnerBox>
@@ -76,7 +83,7 @@ const Poker: React.FC = () => {
                 The winner with the best hand is {winner} with: {results}!
               </h1>
             ) : (
-              <h1>To reveal the winner, click on the buttons below!</h1>
+              <h1>To reveal the winner, click on the button below!</h1>
             )}
           </StyledWinnerBox>
 
@@ -92,7 +99,13 @@ const Poker: React.FC = () => {
           </ControlButtons>
         </ControlSection>
 
-        <Card isRevealed={isRevealed} />
+        <Card
+          isRevealed={isRevealed}
+          playerCards={playerTwoCards.map((card) => card.image)}
+        />
+        <section>
+          <p id="second-player">Player Two</p>
+        </section>
       </Content>
     </Container>
   );

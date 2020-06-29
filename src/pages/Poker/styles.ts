@@ -2,18 +2,32 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: 1px solid red; */
 `;
+
 export const Content = styled.div`
   width: 100%;
   max-width: 1248px;
   margin: 0 auto;
   display: flex;
-  padding: 0 50px;
   height: 100vh;
+
+  & > section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    transform: rotate(270deg);
+    height: 50px;
+    width: 160px;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  #second-player {
+    transform: rotate(-270deg);
+  }
 `;
 
 export const ControlSection = styled.div`
@@ -22,6 +36,7 @@ export const ControlSection = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
+  width: 100%;
   padding: 0 10px;
 `;
 
@@ -29,17 +44,18 @@ export const StyledWinnerBox = styled.div`
   height: 150px;
   background-color: rgba(1, 1, 1, 0.3);
   margin: 20px 0;
-  width: 60%;
+  width: 350px;
   border-radius: 17px;
 
   h1 {
     text-align: center;
     padding: 10px;
+    font-weight: 500;
   }
 `;
 
 export const ControlButtons = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 350px;
 `;

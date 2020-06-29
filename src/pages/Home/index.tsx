@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         <figure>
           <img src={musicPlayceLogo} alt="Music Playce Logo" />
         </figure>
-        <h1>Seja bem vindo!</h1>
+        <h1>MusicPlayce Poker Game</h1>
         <section>
           <Link to="/poker">
             <Button>play</Button>

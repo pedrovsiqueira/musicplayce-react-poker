@@ -2,26 +2,67 @@ import styled from "styled-components";
 
 interface ICardProps {
   isRevealed: boolean;
+  playerCards?: string[];
 }
 
-export const Container = styled.div<ICardProps>`
-  min-height: 100vh;
+export const Container = styled.div`
+  min-width: 120px;
+  height: 100vh;
 `;
 
 export const Content = styled.div`
   height: 100%;
-  width: 230px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 
-  figure {
+  img {
     width: 100%;
+    height: 100%;
+  }
+`;
 
-    img {
-      width: 100%;
-    }
+export const StyledCardContainer = styled.div`
+  width: 120px;
+  height: 168px;
+`;
+
+export const StyledCard = styled.div<ICardProps>`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+
+  ${(props) =>
+    props.isRevealed
+      ? "transform: rotateY(180deg);"
+      : "transform: rotateY(0deg);"}
+
+  .front-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+
+  .back-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
   }
 `;

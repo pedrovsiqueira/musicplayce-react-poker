@@ -1,7 +1,6 @@
 var poker = require("poker-hands");
 
 export const checkResults = (winner: string) => {
-  const highestCard = poker.highestCard(winner);
   const hasPair = poker.hasPair(winner);
   const hasTwoPair = poker.hasTwoPairs(winner);
   const hasThreeOfAKind = poker.hasThreeOfAKind(winner);
