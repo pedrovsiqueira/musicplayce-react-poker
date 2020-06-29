@@ -61,12 +61,13 @@ export const StyledWinnerBox = styled.div`
   border-radius: 17px;
 
   h1 {
+    font-size: 2.8rem;
     text-align: center;
     padding: 10px;
     font-weight: 500;
 
     @media (max-width: 500px) {
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
   }
 `;
